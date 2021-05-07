@@ -30,8 +30,8 @@ public class ClientController {
 
 	@PostMapping
 	public ResponseEntity<Client> saveUser(@RequestBody Client client){
-		Client createdClient = clientService.createClient(client);
 		try {
+			Client createdClient = clientService.createClient(client);
 			return ResponseEntity.created(
 					new URI("/api/users/"+ createdClient.getId())
 			).body(createdClient);
