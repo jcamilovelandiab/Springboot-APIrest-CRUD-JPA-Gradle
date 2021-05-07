@@ -1,4 +1,4 @@
-# Springboot Apirest CRUD - PostgreSQL - Gradle
+# Springboot Apirest CRUD - Oracle - Gradle
 
 ### Client Controller
 - baseURL/api/clients
