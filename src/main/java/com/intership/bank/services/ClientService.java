@@ -29,5 +29,9 @@ public class ClientService {
     public void deleteClient(Client client){
         clientRepository.delete(client);
     }
+    
+    public Optional<Client> getClientByNid(String nid) {
+    	return clientRepository.findByNid(nid);
+    }
 
 }
