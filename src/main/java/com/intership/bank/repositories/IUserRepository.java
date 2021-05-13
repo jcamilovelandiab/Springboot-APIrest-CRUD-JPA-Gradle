@@ -14,7 +14,7 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface IUserRepository extends JpaRepository<User, Long> {
 	
 	@Query(
 		value = "SELECT * FROM \"user\" WHERE nid=?1", 
