@@ -1,6 +1,7 @@
 package com.intership.bank.entities;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -12,9 +13,9 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "\"client\"")
-@NoArgsConstructor @AllArgsConstructor @Getter @Setter
-public class Client {
+@Table(name = "\"User\"")
+@Data
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

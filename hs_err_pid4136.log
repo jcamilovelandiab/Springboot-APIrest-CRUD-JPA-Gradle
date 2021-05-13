@@ -1,0 +1,172 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd15741c1d, pid=4136, tid=29212
+#
+# JRE version:  (15.0.2+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (15.0.2+7-27, mixed mode, sharing, tiered, unknown gc, windows-amd64)
+# Problematic frame:
+# C  [jimage.dll+0x1c1d]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: 
+
+Host: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz, 8 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.928)
+Time: Wed May 12 09:23:52 2021 Hora est. Pacífico, Sudamérica elapsed time: 0.722782 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread is native thread
+
+Stack: [0x0000007e7d400000,0x0000007e7d500000],  sp=0x0000007e7d4fdbd0,  free space=1014k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [jimage.dll+0x1c1d]
+
+
+siginfo: EXCEPTION_ACCESS_VIOLATION (0xc0000005), reading address 0x000000000001616c
+
+
+Registers:
+RAX=0x0000000000005854, RBX=0x0000007e7d4fdcc1, RCX=0x00007ffd15746000, RDX=0x0000000000005854
+RSP=0x0000007e7d4fdbd0, RBP=0x0000007e7d4fdcc0, RSI=0x0000000000007dac, RDI=0x0000007e7d4fdcc0
+R8 =0x00007ffd15744298, R9 =0x000000000000001c, R10=0x00007ffcbc87c600, R11=0x00007ffd15746000
+R12=0x0000000000000000, R13=0x000001877c0f9700, R14=0x0000007e7d4fed30, R15=0x00007ffcbc87c6e0
+RIP=0x00007ffd15741c1d, EFLAGS=0x0000000000010246
+
+Top of Stack: (sp=0x0000007e7d4fdbd0)
+0x0000007e7d4fdbd0:   000000007c120101 00007ffd2ddaf700
+0x0000007e7d4fdbe0:   000000000000002e 000001877c121cf0
+0x0000007e7d4fdbf0:   000001877c10b9a0 00007ffd15741dab
+0x0000007e7d4fdc00:   000000000000000b 000001877c10b9a0
+0x0000007e7d4fdc10:   000000000000002e 0000000000000000
+0x0000007e7d4fdc20:   0000007e7d4fdc34 000001877c010f00
+0x0000007e7d4fdc30:   0000000000000000 0000000000000014
+0x0000007e7d4fdc40:   0000000000000000 000001877c11b090
+0x0000007e7d4fdc50:   0000000000180016 000001877c11b208
+0x0000007e7d4fdc60:   000062f46fcb46f8 000001877c0f0ba4
+0x0000007e7d4fdc70:   00007ffcbc859278 0000000000000017
+0x0000007e7d4fdc80:   000001877c10b9a0 0000007e7d4fed30
+0x0000007e7d4fdc90:   000000000000000b 00007ffd15742689
+0x0000007e7d4fdca0:   0045005400530059 000000000000002e
+0x0000007e7d4fdcb0:   0048004700420044 002e005005000005
+0x0000007e7d4fdcc0:   61622e6176616a2f 692f6b646a2f6573 
+
+Instructions: (pc=0x00007ffd15741c1d)
+0x00007ffd15741b1d:   d2 44 8d 42 40 e9 35 20 00 00 cc 40 53 48 83 ec
+0x00007ffd15741b2d:   20 48 8b d9 48 8b 49 48 48 85 c9 74 1d 80 3d cf
+0x00007ffd15741b3d:   44 00 00 00 74 06 48 8b 53 18 eb 04 48 8b 53 40
+0x00007ffd15741b4d:   e8 96 0e 00 00 48 83 63 48 00 8b 4b 0c 83 f9 ff
+0x00007ffd15741b5d:   74 09 e8 cc 0c 00 00 83 4b 0c ff 48 83 c4 20 5b
+0x00007ffd15741b6d:   c3 cc cc 40 53 48 83 ec 20 48 8b d9 48 8d 0d b0
+0x00007ffd15741b7d:   46 00 00 e8 b3 0c 00 00 83 6b 08 01 75 24 48 8b
+0x00007ffd15741b8d:   d3 48 8d 0d 83 44 00 00 e8 22 08 00 00 48 8b cb
+0x00007ffd15741b9d:   e8 aa fe ff ff ba 78 00 00 00 48 8b cb e8 b1 0e
+0x00007ffd15741bad:   00 00 48 8d 0d 7a 46 00 00 48 83 c4 20 5b e9 80
+0x00007ffd15741bbd:   0c 00 00 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffd15741bcd:   ec 20 41 8b f1 4d 8b c8 48 8b fa 4c 8b d9 4d 85
+0x00007ffd15741bdd:   c0 74 78 85 f6 74 74 44 8a 12 48 8d 5a 01 48 8b
+0x00007ffd15741bed:   d3 b8 93 01 00 01 eb 12 69 c0 93 01 00 01 41 0f
+0x00007ffd15741bfd:   b6 ca 44 8a 12 33 c1 48 ff c2 45 84 d2 75 e9 4d
+0x00007ffd15741c0d:   8b 03 0f ba f0 1f 33 d2 49 8b cb f7 f6 48 63 c2
+0x00007ffd15741c1d:   41 8b 14 81 41 ff 50 08 85 c0 7e 24 8a 0f eb 10
+0x00007ffd15741c2d:   69 c0 93 01 00 01 0f b6 c9 33 c1 8a 0b 48 ff c3
+0x00007ffd15741c3d:   84 c9 75 ec 0f ba f0 1f 33 d2 f7 f6 8b c2 eb 0e
+0x00007ffd15741c4d:   79 09 83 c9 ff 2b c8 8b c1 eb 03 83 c8 ff 48 8b
+0x00007ffd15741c5d:   5c 24 30 48 8b 74 24 38 48 83 c4 20 5f c3 cc 48
+0x00007ffd15741c6d:   89 5c 24 08 48 89 74 24 10 57 48 83 ec 20 48 8b
+0x00007ffd15741c7d:   f1 48 8d 0d ab 45 00 00 e8 ae 0b 00 00 33 ff 39
+0x00007ffd15741c8d:   3d 86 43 00 00 76 24 48 8b 05 85 43 00 00 48 8b
+0x00007ffd15741c9d:   d6 48 8b 1c f8 48 8b 0b e8 d6 1e 00 00 85 c0 74
+0x00007ffd15741cad:   2b ff c7 3b 3d 62 43 00 00 72 dc 33 db 48 8d 0d
+0x00007ffd15741cbd:   6f 45 00 00 e8 7a 0b 00 00 48 8b 74 24 38 48 8b
+0x00007ffd15741ccd:   c3 48 8b 5c 24 30 48 83 c4 20 5f c3 ff 43 08 eb
+0x00007ffd15741cdd:   dc cc cc 48 89 5c 24 08 48 89 74 24 10 57 48 83
+0x00007ffd15741ced:   ec 20 48 8b d9 48 8b f2 48 8b 49 10 49 8b f8 8b
+0x00007ffd15741cfd:   53 30 48 8b 01 ff 50 20 4c 8b 43 50 48 8b d6 48
+0x00007ffd15741d0d:   8b 4b 10 44 8b c8 e8 a8 fe ff ff 83 f8 ff 74 38 
+
+
+
+---------------  P R O C E S S  ---------------
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+
+Dynamic libraries:
+0x00007ff7464c0000 - 0x00007ff7464cd000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\javaw.exe
+0x00007ffd2dd50000 - 0x00007ffd2df45000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffd2c310000 - 0x00007ffd2c3cd000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffd2bab0000 - 0x00007ffd2bd78000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffd2b7a0000 - 0x00007ffd2b8a0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffd14250000 - 0x00007ffd14268000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\jli.dll
+0x00007ffd2d860000 - 0x00007ffd2da00000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffd2bd80000 - 0x00007ffd2bda2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffd2c090000 - 0x00007ffd2c0ba000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffd2b8f0000 - 0x00007ffd2b9fb000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffd2b700000 - 0x00007ffd2b79d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffd1df60000 - 0x00007ffd1e1fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.844_none_ca00b6081b84eb1d\COMCTL32.dll
+0x00007ffd01f50000 - 0x00007ffd01f69000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\VCRUNTIME140.dll
+0x00007ffd2d730000 - 0x00007ffd2d7ce000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffd2c480000 - 0x00007ffd2c4b0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffd154a0000 - 0x00007ffd154ac000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\vcruntime140_1.dll
+0x00007ffcdaa30000 - 0x00007ffcdaac1000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\msvcp140.dll
+0x00007ffcbc010000 - 0x00007ffcbcb6e000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\server\jvm.dll
+0x00007ffd2c3d0000 - 0x00007ffd2c47c000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffd2c270000 - 0x00007ffd2c30b000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffd2dac0000 - 0x00007ffd2dbeb000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffd2c4b0000 - 0x00007ffd2c4b8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffd1e570000 - 0x00007ffd1e597000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffd11b20000 - 0x00007ffd11b29000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffd2c0c0000 - 0x00007ffd2c12b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffd21110000 - 0x00007ffd2111a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffd29400000 - 0x00007ffd29412000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffd15740000 - 0x00007ffd1574a000 	D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin\jimage.dll
+
+dbghelp: loading error: 1455
+symbol engine: initialization error.
+
+VM Arguments:
+java_command: <unknown>
+java_class_path (initial): <not set>
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-11.0.11
+PATH=D:\ProgramFiles\SpringTools4\sts-4.10.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955\jre\bin;D:/ProgramFiles/SpringTools4/sts-4.10.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin/server;D:/ProgramFiles/SpringTools4/sts-4.10.0.RELEASE//plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_15.0.2.v20210201-0955/jre/bin;D:\ProgramFiles\Oracle\Oracle18c\dbhomeXE\bin;D:\ProgramFiles\Oracle18cXE\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Archivos de Programa\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Java\jdk-11.0.11\bin;C:\Python27;C:\Program Files\gradle-6.6\bin;C:\Users\camilo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;D:\ProgramFiles\xampp\php;C:\Program Files\mongodb4.0.20x64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\ProgramFiles\heroku\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\camilo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\camilo\AppData\Local\Programs\Python\Python39\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;D:\Archivos de Programa\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Python27;C:\Program Files\gradle-6.6\bin;C:\Users\camilo\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\ProgramData\ComposerSetup\bin;C:\Program Files\mongodb4
+USERNAME=camilo
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 158 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 10 , 64 bit Build 19041 (10.0.19041.928)
+OS uptime: 0 days 18:23 hours
+
+CPU: total 8 (initial active 0) 
+
+Memory: 4k page, system-wide physical 16304M (650M free)
+TotalPageFile size 31431M (AvailPageFile size 23M)
+current process WorkingSet (physical memory assigned to process): 6M, peak: 6M
+current process commit charge ("private bytes"): 2M, peak: 2M
+
+vm_info: OpenJDK 64-Bit Server VM (15.0.2+7-27) for windows-amd64 JRE (15.0.2+7-27), built on Dec  7 2020 20:02:38 by "mach5one" with unknown MS VC++:1925
+
+END.
